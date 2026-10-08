@@ -53,3 +53,11 @@ export function topicProblems(appearances){
  }
  return [...byKey.values()];
 }
+export function solutionLink(p){
+ const parts=p.key.split(':');
+ if(parts[0]==='luogu')return {url:`https://www.luogu.com.cn/problem/solution/${encodeURIComponent(parts[1])}`,label:'题解区'};
+ if(parts[0]==='atcoder'){const contest=parts[1].slice(0,parts[1].lastIndexOf('_'));return {url:`https://atcoder.jp/contests/${encodeURIComponent(contest)}/editorial`,label:'竞赛题解'};}
+ if(parts[0]==='cf')return {url:`https://codeforces.com/${Number(parts[1])>=100000?'gym':'contest'}/${parts[1]}`,label:'竞赛 / 题解入口'};
+ if(parts[0]==='leetcode')return {url:`https://leetcode.cn/problems/${encodeURIComponent(parts[1])}/solutions/`,label:'题解区'};
+ return null;
+}

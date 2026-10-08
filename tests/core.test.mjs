@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {canonical,collectCF,collectAT,statusOf,stats,importPassed,knowledgeTags,topicProblems} from '../site/core.js';
+import {canonical,collectCF,collectAT,statusOf,stats,importPassed,knowledgeTags,topicProblems,solutionLink} from '../site/core.js';
 test('canonical keys unify original and Luogu mirrors without guessing numeric AT IDs',()=>{
  for(const value of ['CF1196B','https://codeforces.com/problemset/problem/1196/B','https://www.luogu.com.cn/problem/CF1196B','cf:1196:B'])assert.equal(canonical(value),'cf:1196:B');
  for(const value of ['abc250_e','AT_abc250_e','https://atcoder.jp/contests/abc250/tasks/abc250_e'])assert.equal(canonical(value),'atcoder:abc250_e');
@@ -22,4 +22,13 @@ test('topics union explicit tags and dates without changing preserved appearance
  for(const tag of ['DP','贪心'])assert.deepEqual(stats(items.filter(p=>p.topics.includes(tag)),[],{a:true}),{total:1,solved:1,appearances:1});
  assert.deepEqual(knowledgeTags('dp[i][1/2/3/4] 分别表示'),[]);
  assert.deepEqual(knowledgeTags('DP 0-1 背包 分类讨论'),['DP','0-1 背包','分类讨论']);
+});
+
+test('solution links use platform pages instead of the source spreadsheet',()=>{
+ assert.equal(solutionLink({key:'luogu:P5677'}).url,'https://www.luogu.com.cn/problem/solution/P5677');
+ assert.equal(solutionLink({key:'atcoder:abc250_e'}).url,'https://atcoder.jp/contests/abc250/editorial');
+ assert.equal(solutionLink({key:'cf:1196:B'}).url,'https://codeforces.com/contest/1196');
+ assert.equal(solutionLink({key:'cf:105161:E'}).url,'https://codeforces.com/gym/105161');
+ assert.equal(solutionLink({key:'leetcode:maximum-subarray'}).url,'https://leetcode.cn/problems/maximum-subarray/solutions/');
+ assert.equal(solutionLink({key:'hdu:6357'}),null);
 });
