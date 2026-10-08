@@ -1,3 +1,4 @@
+import {normalizeTag} from './topics.js?v=3';
 export const platforms={cf:'Codeforces',at:'AtCoder',lg:'洛谷',leetcode:'LeetCode'};
 export function canonical(value){
  const v=String(value).trim();let m;
@@ -34,7 +35,7 @@ export function importPassed(text){
 }
 
 // Only explicit source tags are categories; editorial URLs and prose are not.
-export function knowledgeTags(value=''){
+function sourceTags(value=''){
  const bracketed=[...(value.trim().startsWith('[')?value:'').matchAll(/\[([^\[\]\n]+)\]/g)].map(m=>m[1].trim()).filter(t=>t&&!/https?:|@/.test(t));
  if(bracketed.length)return [...new Set(bracketed)];
  const plain=value.trim();
@@ -43,6 +44,7 @@ export function knowledgeTags(value=''){
  if(plain==='DP 0-1 背包 分类讨论')return ['DP','0-1 背包','分类讨论'];
  return [];
 }
+export function knowledgeTags(value=''){return [...new Set(sourceTags(value).map(normalizeTag).filter(Boolean))];}
 export function topicProblems(appearances){
  const byKey=new Map();
  for(const p of appearances){

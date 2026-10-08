@@ -32,3 +32,14 @@ test('solution links use platform pages instead of the source spreadsheet',()=>{
  assert.equal(solutionLink({key:'leetcode:maximum-subarray'}).url,'https://leetcode.cn/problems/maximum-subarray/solutions/');
  assert.equal(solutionLink({key:'hdu:6357'}),null);
 });
+
+test('clean taxonomy merges aliases, removes vague descriptors and unions parent progress',async()=>{
+ const {normalizeTag,categoryOf,belongsToTopic}=await import('../site/topics.js');
+ assert.equal(normalizeTag('恰好'),null);assert.equal(normalizeTag('二进制思维'),'二进制');
+ assert.deepEqual(knowledgeTags('[二进制],[二进制思维],[恰好],[优化 DP],[DP 优化]'),['二进制','DP 优化']);
+ for(const tag of ['数位 DP','树形 DP','0-1 背包','状态设计','DP 优化'])assert.equal(categoryOf(tag),'动态规划');
+ const ps=topicProblems([{key:'a',date:'2026-10-08',tags:'[DP],[数位 DP]'}, {key:'a',date:'2025-01-01',tags:'[状态设计]'}, {key:'b',date:'2026-10-07',tags:'[树形 DP]'}, {key:'c',date:'2026-10-07',tags:'[恰好]'}]);
+ assert.deepEqual(stats(ps.filter(p=>belongsToTopic(p,'__group:动态规划')),[],{a:true}),{total:2,solved:1,appearances:2});
+ assert.equal(belongsToTopic(ps[2],'__untagged'),true);
+ assert.equal(belongsToTopic({topics:['二进制']},'二进制思维'),true);
+});

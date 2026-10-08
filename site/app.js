@@ -1,4 +1,5 @@
-import {platforms,canonical,collectCF,collectAT,statusOf,unique,stats,importPassed,topicProblems,solutionLink} from './core.js?v=2';
+import {topicCategories,categoryOf,belongsToTopic} from './topics.js?v=3';
+import {platforms,canonical,collectCF,collectAT,statusOf,unique,stats,importPassed,topicProblems,solutionLink} from './core.js?v=3';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem('lingcha.'+key))??fallback}catch{return fallback}};
 const save=(key,value)=>{try{localStorage.setItem('lingcha.'+key,JSON.stringify(value))}catch{$('storageStatus').textContent='浏览器无法保存，请及时导出备份。'}};
@@ -23,11 +24,17 @@ function render(){
  $('topics').hidden=mode!=='all';$('topicTitle').hidden=mode!=='all';
  const groups=new Map([['',catalog],['__untagged',catalog.filter(p=>!p.topics.length)]]);
  for(const p of catalog)for(const tag of p.topics){if(!groups.has(tag))groups.set(tag,[]);groups.get(tag).push(p);}
- const ordered=[...groups].sort((a,b)=>a[0]===''?-1:b[0]===''?1:a[0]==='__untagged'?1:b[0]==='__untagged'?-1:b[1].length-a[1].length||a[0].localeCompare(b[0],'zh-CN'));
- $('topicList').innerHTML=ordered.map(([tag,ps])=>{const s=stats(ps,profiles,manual);return `<button class="light ${topic===tag?'selected':''}" data-topic="${esc(tag)}" aria-pressed="${topic===tag}">${esc(tag===''?'全部题单':tag==='__untagged'?'待分类':tag)} <span>${s.solved} / ${s.total}</span></button>`}).join('');
- $('topicTitle').textContent=topic===''?'全部题单 · 去重题目':topic==='__untagged'?'待分类':topic+' · 题单';
+ const opened=new Set([...$('topicList').querySelectorAll('details[open]')].map(el=>el.dataset.category));
+ const topicButton=(tag,label,ps)=>{const s=stats(ps,profiles,manual);return `<button class="light ${topic===tag?'selected':''}" data-topic="${esc(tag)}" aria-pressed="${topic===tag}">${esc(label)} <span>${s.solved} / ${s.total}</span></button>`;};
+ $('topicList').innerHTML=`<div class="topicShortcuts">${topicButton('','全部题目',catalog)}${topicButton('__untagged','待分类',groups.get('__untagged'))}</div>`+topicCategories.map(category=>{
+  const children=[...groups].filter(([tag])=>tag&&!tag.startsWith('__')&&categoryOf(tag)===category).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0],'zh-CN'));
+  if(!children.length)return '';
+  const ps=catalog.filter(p=>belongsToTopic(p,'__group:'+category)),s=stats(ps,profiles,manual),selected=topic==='__group:'+category||children.some(([tag])=>tag===topic);
+  return `<details class="topicCategory" data-category="${esc(category)}" ${opened.has(category)||selected?'open':''}><summary>${esc(category)} <span>${s.solved} / ${s.total} · ${children.length} 个子标签</span></summary><div class="topicChildren">${topicButton('__group:'+category,'全部'+category,ps)}${children.map(([tag,ps])=>topicButton(tag,tag,ps)).join('')}</div></details>`;
+ }).join('');
+ $('topicTitle').textContent=topic===''?'全部题单 · 去重题目':topic==='__untagged'?'待分类':topic.replace('__group:','')+' · 题单';
  const query=$('query').value.trim().toLowerCase(),key=canonical(query),difficulty=$('difficulty').value.trim().toLowerCase();
- let matched=data.problems.filter(p=>(mode!=='all'||!topic||(topic==='__untagged'?!byKey.get(p.key).topics.length:byKey.get(p.key).topics.includes(topic)))&&(!query||(key?p.key===key:[p.id,p.key,p.tags].join(' ').toLowerCase().includes(query)))&&($('platform').value==='all'||p.platform===$('platform').value||($('platform').value==='other'&&!['cf','atcoder','luogu','leetcode'].includes(p.platform)))&&($('completion').value==='all'||get(p)===$('completion').value)&&(!$('start').value||p.date>=$('start').value)&&(!$('end').value||p.date<=$('end').value)&&(!difficulty||[p.difficulty,p.tags].join(' ').toLowerCase().includes(difficulty)));
+ let matched=data.problems.filter(p=>(mode!=='all'||!topic||belongsToTopic(byKey.get(p.key),topic))&&(!query||(key?p.key===key:[p.id,p.key,p.tags,...byKey.get(p.key).topics].join(' ').toLowerCase().includes(query)))&&($('platform').value==='all'||p.platform===$('platform').value||($('platform').value==='other'&&!['cf','atcoder','luogu','leetcode'].includes(p.platform)))&&($('completion').value==='all'||get(p)===$('completion').value)&&(!$('start').value||p.date>=$('start').value)&&(!$('end').value||p.date<=$('end').value)&&(!difficulty||[p.difficulty,p.tags].join(' ').toLowerCase().includes(difficulty)));
  if($('start').value&&$('end').value&&$('start').value>$('end').value){$('summary').textContent='起始日期不能晚于结束日期';$('rows').innerHTML='';return;}
  matched.sort((a,b)=>(descending?-1:1)*a.date.localeCompare(b.date)||a.key.localeCompare(b.key));
  const days=new Map();for(const p of matched){if(!days.has(p.date))days.set(p.date,[]);days.get(p.date).push(p);}
