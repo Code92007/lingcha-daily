@@ -32,3 +32,24 @@ export function importPassed(text){
  const tokens=text.match(/https?:\/\/[^\s,;"<>]+|(?:CF\d+[A-Z]\w*|AT_[a-z\d]+_\w+|(?:P|B|U|SP|UVA|AT_)\d+|NC\d+[A-Z]\w*|(?:LOJ|HDU|DOTCPP|IAI|YACS)\d+|(?:leetcode:[a-z0-9-]+|nowcoder:\d+:[A-Z]\w*|(?:loj|hdu|dotcpp|iai):\d+))/gi)||[];
  const keys=[...new Set(tokens.map(canonical).filter(Boolean))];if(!keys.length)throw Error('未识别到题号，请只粘贴“已通过题目”列表。');return keys;
 }
+
+// Only explicit source tags are categories; editorial URLs and prose are not.
+export function knowledgeTags(value=''){
+ const bracketed=[...(value.trim().startsWith('[')?value:'').matchAll(/\[([^\[\]\n]+)\]/g)].map(m=>m[1].trim()).filter(t=>t&&!/https?:|@/.test(t));
+ if(bracketed.length)return [...new Set(bracketed)];
+ const plain=value.trim();
+ if(['DP','贪心','构造','分类讨论','状压 DP','状态机 DP','线性 DP'].includes(plain))return [plain];
+ if(plain==='DP 位运算')return ['DP','位运算'];
+ if(plain==='DP 0-1 背包 分类讨论')return ['DP','0-1 背包','分类讨论'];
+ return [];
+}
+export function topicProblems(appearances){
+ const byKey=new Map();
+ for(const p of appearances){
+  if(!byKey.has(p.key))byKey.set(p.key,{...p,topics:[],dates:[]});
+  const item=byKey.get(p.key);
+  item.topics=[...new Set([...item.topics,...knowledgeTags(p.tags)])];
+  item.dates=[...new Set([...item.dates,p.date])].sort().reverse();
+ }
+ return [...byKey.values()];
+}

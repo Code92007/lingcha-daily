@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {canonical,collectCF,collectAT,statusOf,stats,importPassed} from '../site/core.js';
+import {canonical,collectCF,collectAT,statusOf,stats,importPassed,knowledgeTags,topicProblems} from '../site/core.js';
 test('canonical keys unify original and Luogu mirrors without guessing numeric AT IDs',()=>{
  for(const value of ['CF1196B','https://codeforces.com/problemset/problem/1196/B','https://www.luogu.com.cn/problem/CF1196B','cf:1196:B'])assert.equal(canonical(value),'cf:1196:B');
  for(const value of ['abc250_e','AT_abc250_e','https://atcoder.jp/contests/abc250/tasks/abc250_e'])assert.equal(canonical(value),'atcoder:abc250_e');
@@ -14,3 +14,12 @@ test('all additional platforms normalize canonical IDs and URLs',()=>{
 });
 
 test('IAI OJ hidden hyperlink platform',()=>{assert.equal(canonical('https://iai.sh.cn/problem/839'),'iai:839');assert.equal(canonical('IAI839'),'iai:839');assert.deepEqual(importPassed('IAI839'),['iai:839']);});
+
+test('topics union explicit tags and dates without changing preserved appearances',()=>{
+ const ps=[{key:'a',date:'2026-10-08',tags:'[DP],[状态机 DP],[DP]'},{key:'a',date:'2025-01-01',tags:'贪心'},{key:'b',date:'2026-10-07',tags:'https://example.org/editorial'},{key:'c',date:'2026-10-06',tags:'这是很长的题解备注'}];
+ const before=JSON.stringify(ps),items=topicProblems(ps);
+ assert.equal(items.length,3);assert.deepEqual(items[0].topics,['DP','状态机 DP','贪心']);assert.deepEqual(items[0].dates,['2026-10-08','2025-01-01']);assert.deepEqual(items[1].topics,[]);assert.deepEqual(items[2].topics,[]);assert.equal(JSON.stringify(ps),before);
+ for(const tag of ['DP','贪心'])assert.deepEqual(stats(items.filter(p=>p.topics.includes(tag)),[],{a:true}),{total:1,solved:1,appearances:1});
+ assert.deepEqual(knowledgeTags('dp[i][1/2/3/4] 分别表示'),[]);
+ assert.deepEqual(knowledgeTags('DP 0-1 背包 分类讨论'),['DP','0-1 背包','分类讨论']);
+});
