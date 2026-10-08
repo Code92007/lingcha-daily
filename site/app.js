@@ -1,4 +1,4 @@
-import {platforms,canonical,collectCF,collectAT,statusOf,unique,stats,importPassed,topicProblems,solutionLink} from './core.js';
+import {platforms,canonical,collectCF,collectAT,statusOf,unique,stats,importPassed,topicProblems,solutionLink} from './core.js?v=2';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem('lingcha.'+key))??fallback}catch{return fallback}};
 const save=(key,value)=>{try{localStorage.setItem('lingcha.'+key,JSON.stringify(value))}catch{$('storageStatus').textContent='浏览器无法保存，请及时导出备份。'}};
