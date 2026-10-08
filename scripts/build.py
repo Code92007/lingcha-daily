@@ -11,7 +11,14 @@ def merge(old,new,today,approve=''):
  for day,records in after.items():
   if day not in before:before[day]=records;continue
   if day>=today:
-   retained={p['key']:p for p in before[day]};retained.update({p['key']:p for p in records});before[day]=sorted(retained.values(),key=lambda p:p['key']);continue
+   previous={};upstream={}
+   for p in before[day]:previous.setdefault(p['key'],[]).append(p)
+   for p in records:upstream.setdefault(p['key'],[]).append(p)
+   retained=[]
+   for key in sorted(set(previous)|set(upstream)):
+    a,b=previous.get(key,[]),upstream.get(key,[])
+    retained.extend(b+[p for p in a[len(b):]])
+   before[day]=retained;continue
   # Source row numbers shift whenever a new date is inserted; they are navigation hints, not corrections.
   clean=lambda rs:[{k:v for k,v in p.items() if k!='row'} for p in rs]
   if clean(before[day])!=clean(records):

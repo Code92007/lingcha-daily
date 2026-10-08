@@ -11,6 +11,9 @@ class IngestionTests(unittest.TestCase):
   with self.assertRaises(ValueError):merge(old,[self.p(difficulty='newer')],'2026-10-08',p[0]['id'])
  def test_today_and_new_dates_retain_disappeared_appearances(self):
   old=[self.p(),self.p('2026-10-08')];new=[self.p('2026-10-08','cf:2:A'),self.p('2026-10-09')];merged,p=merge(old,new,'2026-10-08');self.assertIn(old[0],merged);self.assertIn(old[1],merged);self.assertEqual(len(merged),4);self.assertEqual(len(p),1)
+ def test_today_duplicate_appearances_are_retained(self):
+  old=[self.p('2026-10-08'),dict(self.p('2026-10-08'),row=3)]
+  merged,_=merge(old,[old[0]],'2026-10-08');self.assertEqual(merged,old)
  def test_row_shift_does_not_rewrite_history_or_create_notifications(self):
   old=[self.p()];new=[dict(old[0],row=3)];self.assertEqual(merge(old,new,'2026-10-08'),(old,[]))
  def test_deletion_notification_and_approval(self):
