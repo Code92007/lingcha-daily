@@ -1,0 +1,67 @@
+name: Sync Lingcha and deploy Pages
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Asia/Shanghai 08–12, 16, 20–24. No runs after midnight before 08:00.
+    - cron: '0 0,1,2,3,4,8,12,13,14,15,16 * * *'
+  workflow_dispatch:
+    inputs:
+      approve_change:
+        description: 'Explicit approval: exact pending historical change ID (optional)'
+        type: string
+        required: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: lingcha-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test preservation and completion logic before ingestion
+        run: |
+          python3 -m unittest discover -s tests
+          npm test
+      - name: Read public snapshot and incrementally merge
+        env:
+          APPROVE_CHANGE: ${{ inputs.approve_change }}
+        run: python3 scripts/build.py --approve-change "$APPROVE_CHANGE"
+      - name: Validate updated data
+        run: |
+          python3 -m unittest discover -s tests
+          npm test
+          node --check site/app.js
+      - name: Save updated data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/problems.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: incrementally sync public Lingcha sheet'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
