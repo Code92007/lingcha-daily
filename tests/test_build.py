@@ -17,9 +17,21 @@ class IngestionTests(unittest.TestCase):
   old=[self.p()];m,p=merge(old,[],'2026-10-08');self.assertEqual(m,old);self.assertEqual(merge(old,[],'2026-10-08',p[0]['id'])[0],[])
  def test_mirror_identity(self):
   self.assertEqual(identity('https://www.luogu.com.cn/problem/CF1196B')[1],'cf:1196:B');self.assertEqual(identity('https://www.luogu.com.cn/problem/AT_abc250_e')[1],'atcoder:abc250_e')
+ def test_extra_platforms(self):
+  for url,key in [('https://leetcode-cn.com/problems/maximum-subarray/','leetcode:maximum-subarray'),('https://ac.nowcoder.com/acm/contest/76652/B','nowcoder:76652:B'),('https://loj.ac/p/2978','loj:2978'),('https://www.dotcpp.com/oj/problem2667.html','dotcpp:2667'),('http://acm.hdu.edu.cn/showproblem.php?pid=6357','hdu:6357')]:self.assertEqual(identity(url)[1],key)
+ def test_luogu_only_accepted_list(self):
+  from luogu_passed import parse_html
+  html='<script id="lentille-context" type="application/json">'+json.dumps({'status':200,'data':{'passed':[{'pid':'P1001'},{'pid':'CF1196B'}],'tried':[{'pid':'P5677'}]}})+'</script>'
+  self.assertEqual(parse_html(html),['CF1196B','P1001'])
+  with self.assertRaises(ValueError):parse_html('<html>Login required</html>')
+ def test_numeric_pool_reserved_literals(self):
+  from proto import fields
+  with self.assertRaises(ValueError):fields(b'\x00')
  def test_committed_data_integrity(self):
   data=json.loads((pathlib.Path(__file__).resolve().parents[1]/'site/data/problems.json').read_text());ps=data['problems'];self.assertGreater(len(ps),1000);self.assertEqual(len(ps),len(set((p['date'],p['key'],p['row']) for p in ps)))
   for p in ps:
    datetime.date.fromisoformat(p['date']);self.assertEqual(identity(p['url'])[1],p['key'])
-  self.assertEqual(set(p['platform'] for p in ps),{'cf','atcoder','luogu'})
+  self.assertTrue({'cf','atcoder','luogu'}.issubset(set(p['platform'] for p in ps)))
+  candidates=ps+[p for c in data['pending'] for p in c['after']]
+  self.assertEqual(set(p['platform'] for p in candidates),{'cf','atcoder','luogu','leetcode','nowcoder','loj','dotcpp','hdu'})
 if __name__=='__main__':unittest.main()

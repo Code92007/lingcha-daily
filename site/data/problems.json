@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T16:46:08.346941+08:00",
+  "generatedAt": "2026-10-08T17:00:05.045949+08:00",
   "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
   "revision": 23455,
   "problems": [
@@ -13059,9 +13059,893 @@
       "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
       "row": 1174,
       "date": "2022-04-18"
+    },
+    {
+      "key": "leetcode:spiral-matrix",
+      "id": "spiral-matrix",
+      "platform": "leetcode",
+      "url": "https://leetcode-cn.com/problems/spiral-matrix/",
+      "difficulty": "",
+      "tags": "",
+      "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+      "row": 1176,
+      "date": "2022-04-14"
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "date": "2024-08-19",
+      "before": [
+        {
+          "key": "cf:1937:B",
+          "id": "CF1937B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1937/B",
+          "difficulty": "1300.0",
+          "tags": "[贪心]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 560,
+          "date": "2024-08-19"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1937:B",
+          "id": "CF1937B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1937/B",
+          "difficulty": "1300.0",
+          "tags": "[贪心]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 560,
+          "date": "2024-08-19"
+        },
+        {
+          "key": "nowcoder:76652:B",
+          "id": "NC76652B",
+          "platform": "nowcoder",
+          "url": "https://ac.nowcoder.com/acm/contest/76652/B",
+          "difficulty": "1300.0",
+          "tags": "[贪心]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 560,
+          "date": "2024-08-19"
+        }
+      ],
+      "id": "289eaca52a690cd2de5e0b4b"
+    },
+    {
+      "date": "2024-05-24",
+      "before": [
+        {
+          "key": "luogu:P5369",
+          "id": "P5369",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P5369",
+          "difficulty": "",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 621,
+          "date": "2024-05-24"
+        }
+      ],
+      "after": [
+        {
+          "key": "leetcode:beautiful-arrangement",
+          "id": "beautiful-arrangement",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/beautiful-arrangement/",
+          "difficulty": "",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 621,
+          "date": "2024-05-24"
+        },
+        {
+          "key": "luogu:P5369",
+          "id": "P5369",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P5369",
+          "difficulty": "",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 621,
+          "date": "2024-05-24"
+        }
+      ],
+      "id": "c57a50d9199aca99251572e9"
+    },
+    {
+      "date": "2024-03-07",
+      "before": [
+        {
+          "key": "cf:895:C",
+          "id": "CF895C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/895/C",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 677,
+          "date": "2024-03-07"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:895:C",
+          "id": "CF895C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/895/C",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 677,
+          "date": "2024-03-07"
+        },
+        {
+          "key": "loj:2978",
+          "id": "LOJ2978",
+          "platform": "loj",
+          "url": "https://loj.ac/p/2978",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 677,
+          "date": "2024-03-07"
+        }
+      ],
+      "id": "5b3d89ae3a8d4e9e050d82fe"
+    },
+    {
+      "date": "2024-01-29",
+      "before": [
+        {
+          "key": "cf:489:B",
+          "id": "CF489B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/489/B",
+          "difficulty": "1200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 705,
+          "date": "2024-01-29"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:489:B",
+          "id": "CF489B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/489/B",
+          "difficulty": "1200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 705,
+          "date": "2024-01-29"
+        },
+        {
+          "key": "leetcode:find-beautiful-indices-in-the-given-array-ii",
+          "id": "find-beautiful-indices-in-the-given-array-ii",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/find-beautiful-indices-in-the-given-array-ii/",
+          "difficulty": "1200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 705,
+          "date": "2024-01-29"
+        }
+      ],
+      "id": "d587eb4a55bae1a25d4f63e0"
+    },
+    {
+      "date": "2023-10-12",
+      "before": [
+        {
+          "key": "cf:1678:B2",
+          "id": "CF1678B2",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1678/B2",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 782,
+          "date": "2023-10-12"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1678:B2",
+          "id": "CF1678B2",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1678/B2",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 782,
+          "date": "2023-10-12"
+        },
+        {
+          "key": "leetcode:minimum-number-of-changes-to-make-binary-string-beautiful",
+          "id": "minimum-number-of-changes-to-make-binary-string-beautiful",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 782,
+          "date": "2023-10-12"
+        }
+      ],
+      "id": "c11ebb5ecc17e6bc0918eb14"
+    },
+    {
+      "date": "2023-08-29",
+      "before": [
+        {
+          "key": "atcoder:abc294_e",
+          "id": "abc294_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc294/tasks/abc294_e",
+          "difficulty": "792.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 814,
+          "date": "2023-08-29"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc294_e",
+          "id": "abc294_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc294/tasks/abc294_e",
+          "difficulty": "792.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 814,
+          "date": "2023-08-29"
+        },
+        {
+          "key": "nowcoder:62033:D",
+          "id": "NC62033D",
+          "platform": "nowcoder",
+          "url": "https://ac.nowcoder.com/acm/contest/62033/D",
+          "difficulty": "792.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 814,
+          "date": "2023-08-29"
+        }
+      ],
+      "id": "3e9e8538fa012117fd5fb39c"
+    },
+    {
+      "date": "2023-07-17",
+      "before": [
+        {
+          "key": "cf:1195:C",
+          "id": "CF1195C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1195/C",
+          "difficulty": "1400.0",
+          "tags": "状态机 DP",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 846,
+          "date": "2023-07-17"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1195:C",
+          "id": "CF1195C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1195/C",
+          "difficulty": "1400.0",
+          "tags": "状态机 DP",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 846,
+          "date": "2023-07-17"
+        },
+        {
+          "key": "nowcoder:59157:O",
+          "id": "NC59157O",
+          "platform": "nowcoder",
+          "url": "https://ac.nowcoder.com/acm/contest/59157/O",
+          "difficulty": "1400.0",
+          "tags": "状态机 DP",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 846,
+          "date": "2023-07-17"
+        }
+      ],
+      "id": "76f310a32428abde415de925"
+    },
+    {
+      "date": "2023-05-02",
+      "before": [
+        {
+          "key": "cf:1256:D",
+          "id": "CF1256D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1256/D",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 900,
+          "date": "2023-05-02"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1256:D",
+          "id": "CF1256D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1256/D",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 900,
+          "date": "2023-05-02"
+        },
+        {
+          "key": "leetcode:minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+          "id": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 900,
+          "date": "2023-05-02"
+        }
+      ],
+      "id": "2476f55f2ef9cd67cdca54b2"
+    },
+    {
+      "date": "2023-03-13",
+      "before": [
+        {
+          "key": "cf:1304:D",
+          "id": "CF1304D",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/1304/D",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 936,
+          "date": "2023-03-13"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1304:D",
+          "id": "CF1304D",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/1304/D",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 936,
+          "date": "2023-03-13"
+        },
+        {
+          "key": "leetcode:construct-smallest-number-from-di-string",
+          "id": "construct-smallest-number-from-di-string",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/construct-smallest-number-from-di-string/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 936,
+          "date": "2023-03-13"
+        }
+      ],
+      "id": "f6ef51f9415aaf6b299003ce"
+    },
+    {
+      "date": "2023-03-06",
+      "before": [
+        {
+          "key": "cf:219:D",
+          "id": "CF219D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/219/D",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 941,
+          "date": "2023-03-06"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:219:D",
+          "id": "CF219D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/219/D",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 941,
+          "date": "2023-03-06"
+        },
+        {
+          "key": "leetcode:minimum-edge-reversals-so-every-node-is-reachable",
+          "id": "minimum-edge-reversals-so-every-node-is-reachable",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/contest/biweekly-contest-113/problems/minimum-edge-reversals-so-every-node-is-reachable/",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 941,
+          "date": "2023-03-06"
+        }
+      ],
+      "id": "23a40274a051296e74e940a8"
+    },
+    {
+      "date": "2023-01-17",
+      "before": [
+        {
+          "key": "cf:1409:E",
+          "id": "CF1409E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1409/E",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 975,
+          "date": "2023-01-17"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1409:E",
+          "id": "CF1409E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1409/E",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 975,
+          "date": "2023-01-17"
+        },
+        {
+          "key": "leetcode:maximize-win-from-two-segments",
+          "id": "maximize-win-from-two-segments",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/contest/biweekly-contest-97/problems/maximize-win-from-two-segments/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 975,
+          "date": "2023-01-17"
+        },
+        {
+          "key": "leetcode:minimum-white-tiles-after-covering-with-carpets",
+          "id": "minimum-white-tiles-after-covering-with-carpets",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 975,
+          "date": "2023-01-17"
+        }
+      ],
+      "id": "9165c4897fe74ad8346e0203"
+    },
+    {
+      "date": "2023-01-04",
+      "before": [
+        {
+          "key": "cf:1733:D2",
+          "id": "CF1733D2",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1733/D2",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 984,
+          "date": "2023-01-04"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1733:D2",
+          "id": "CF1733D2",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1733/D2",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 984,
+          "date": "2023-01-04"
+        },
+        {
+          "key": "leetcode:apply-operations-to-make-two-strings-equal",
+          "id": "apply-operations-to-make-two-strings-equal",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/contest/weekly-contest-366/problems/apply-operations-to-make-two-strings-equal/",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 984,
+          "date": "2023-01-04"
+        }
+      ],
+      "id": "639fd2fccf450aed5622d5bd"
+    },
+    {
+      "date": "2022-10-14",
+      "before": [
+        {
+          "key": "cf:1407:D",
+          "id": "CF1407D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1407/D",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1042,
+          "date": "2022-10-14"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1407:D",
+          "id": "CF1407D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1407/D",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1042,
+          "date": "2022-10-14"
+        },
+        {
+          "key": "leetcode:jump-game-viii",
+          "id": "jump-game-viii",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/jump-game-viii/",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1042,
+          "date": "2022-10-14"
+        }
+      ],
+      "id": "bf58b688affb91cf56762161"
+    },
+    {
+      "date": "2022-10-01",
+      "before": [
+        {
+          "key": "cf:965:D",
+          "id": "CF965D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/965/D",
+          "difficulty": "1900.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1052,
+          "date": "2022-10-01"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:965:D",
+          "id": "CF965D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/965/D",
+          "difficulty": "1900.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1052,
+          "date": "2022-10-01"
+        },
+        {
+          "key": "dotcpp:2667",
+          "id": "DOTCPP2667",
+          "platform": "dotcpp",
+          "url": "https://www.dotcpp.com/oj/problem2667.html",
+          "difficulty": "1900.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1052,
+          "date": "2022-10-01"
+        }
+      ],
+      "id": "75f4fa7e3288a776bc73c6a3"
+    },
+    {
+      "date": "2022-09-26",
+      "before": [
+        {
+          "key": "cf:1213:G",
+          "id": "CF1213G",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1213/G",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1057,
+          "date": "2022-09-26"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1213:G",
+          "id": "CF1213G",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1213/G",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1057,
+          "date": "2022-09-26"
+        },
+        {
+          "key": "leetcode:number-of-good-paths",
+          "id": "number-of-good-paths",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/number-of-good-paths/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1057,
+          "date": "2022-09-26"
+        }
+      ],
+      "id": "a2035e58a3d08ae9cee158bf"
+    },
+    {
+      "date": "2022-08-31",
+      "before": [
+        {
+          "key": "cf:933:A",
+          "id": "CF933A",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/933/A",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1075,
+          "date": "2022-08-31"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:933:A",
+          "id": "CF933A",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/933/A",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1075,
+          "date": "2022-08-31"
+        },
+        {
+          "key": "hdu:6357",
+          "id": "HDU6357",
+          "platform": "hdu",
+          "url": "http://acm.hdu.edu.cn/showproblem.php?pid=6357",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1075,
+          "date": "2022-08-31"
+        }
+      ],
+      "id": "e666264886e6134a4fbbe76e"
+    },
+    {
+      "date": "2022-08-12",
+      "before": [
+        {
+          "key": "cf:1368:D",
+          "id": "CF1368D",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/1368/D",
+          "difficulty": "1700.0",
+          "tags": "@hqzture 说可以 O(n)，原理见 \nhttps://leetcode.cn/problems/total-hamming-distance/solution/onwei-yun-suan-by-hqztrue-z5oo/\nhttps://zhuanlan.zhihu.com/p/72730434",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1088,
+          "date": "2022-08-12"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1368:D",
+          "id": "CF1368D",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/1368/D",
+          "difficulty": "1700.0",
+          "tags": "@hqzture 说可以 O(n)，原理见 \nhttps://leetcode.cn/problems/total-hamming-distance/solution/onwei-yun-suan-by-hqztrue-z5oo/\nhttps://zhuanlan.zhihu.com/p/72730434",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1088,
+          "date": "2022-08-12"
+        },
+        {
+          "key": "leetcode:apply-operations-on-array-to-maximize-sum-of-squares",
+          "id": "apply-operations-on-array-to-maximize-sum-of-squares",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/contest/weekly-contest-366/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
+          "difficulty": "1700.0",
+          "tags": "@hqzture 说可以 O(n)，原理见 \nhttps://leetcode.cn/problems/total-hamming-distance/solution/onwei-yun-suan-by-hqztrue-z5oo/\nhttps://zhuanlan.zhihu.com/p/72730434",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1088,
+          "date": "2022-08-12"
+        }
+      ],
+      "id": "1e1985128bcad73ee5743665"
+    },
+    {
+      "date": "2022-06-21",
+      "before": [
+        {
+          "key": "cf:1446:B",
+          "id": "CF1446B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1446/B",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1127,
+          "date": "2022-06-21"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1446:B",
+          "id": "CF1446B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1446/B",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1127,
+          "date": "2022-06-21"
+        },
+        {
+          "key": "leetcode:longest-common-subsequence",
+          "id": "longest-common-subsequence",
+          "platform": "leetcode",
+          "url": "https://leetcode-cn.com/problems/longest-common-subsequence/",
+          "difficulty": "1800.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1127,
+          "date": "2022-06-21"
+        }
+      ],
+      "id": "e00a8fb2c8c2cd17f63ccde9"
+    },
+    {
+      "date": "2022-05-10",
+      "before": [
+        {
+          "key": "cf:282:C",
+          "id": "CF282C",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/282/C",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1157,
+          "date": "2022-05-10"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:282:C",
+          "id": "CF282C",
+          "platform": "cf",
+          "url": "http://codeforces.com/problemset/problem/282/C",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1157,
+          "date": "2022-05-10"
+        },
+        {
+          "key": "leetcode:apply-bitwise-operations-to-make-strings-equal",
+          "id": "apply-bitwise-operations-to-make-strings-equal",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/contest/weekly-contest-329/problems/apply-bitwise-operations-to-make-strings-equal/",
+          "difficulty": "1500.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1157,
+          "date": "2022-05-10"
+        }
+      ],
+      "id": "0e1792356e9d26a7578b69e2"
+    },
+    {
+      "date": "2022-04-27",
+      "before": [
+        {
+          "key": "cf:346:B",
+          "id": "CF346B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/346/B",
+          "difficulty": "2000.0",
+          "tags": "群主写的 KMP 文章\n\nhttps://www.zhihu.com/question/21923021/answer/37475572",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1167,
+          "date": "2022-04-27"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:346:B",
+          "id": "CF346B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/346/B",
+          "difficulty": "2000.0",
+          "tags": "群主写的 KMP 文章\n\nhttps://www.zhihu.com/question/21923021/answer/37475572",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1167,
+          "date": "2022-04-27"
+        },
+        {
+          "key": "leetcode:longest-common-subsequence",
+          "id": "longest-common-subsequence",
+          "platform": "leetcode",
+          "url": "https://leetcode-cn.com/problems/longest-common-subsequence/",
+          "difficulty": "2000.0",
+          "tags": "群主写的 KMP 文章\n\nhttps://www.zhihu.com/question/21923021/answer/37475572",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1167,
+          "date": "2022-04-27"
+        }
+      ],
+      "id": "eb2e1447cb3f9d0453fa75f0"
+    },
+    {
+      "date": "2022-04-26",
+      "before": [
+        {
+          "key": "cf:75:D",
+          "id": "CF75D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/75/D",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1168,
+          "date": "2022-04-26"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:75:D",
+          "id": "CF75D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/75/D",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1168,
+          "date": "2022-04-26"
+        },
+        {
+          "key": "leetcode:maximum-subarray",
+          "id": "maximum-subarray",
+          "platform": "leetcode",
+          "url": "https://leetcode-cn.com/problems/maximum-subarray/",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 1168,
+          "date": "2022-04-26"
+        }
+      ],
+      "id": "3723a9e431531bbd1c3b2358"
+    }
+  ],
   "skipped": [
     {
       "date": "2026-04-02",
@@ -13076,11 +13960,6 @@
     {
       "date": "2022-04-15",
       "row": 1175,
-      "reason": "原表题目栏无可识别题目链接"
-    },
-    {
-      "date": "2022-04-14",
-      "row": 1176,
       "reason": "原表题目栏无可识别题目链接"
     },
     {

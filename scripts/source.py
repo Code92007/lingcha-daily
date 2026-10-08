@@ -48,6 +48,13 @@ def identity(url):
   if cf:return 'cf',f'cf:{cf[1]}:{cf[2].upper()}',pid
   if pid.startswith('AT_'):return 'atcoder','atcoder:'+pid[3:].lower(),pid
   return 'luogu','luogu:'+pid.upper(),pid.upper()
+ m=re.search(r'(?:leetcode\.cn|leetcode-cn\.com|leetcode\.com)/(?:contest/[^/]+/)?problems/([a-z0-9-]+)',url)
+ if m:return 'leetcode','leetcode:'+m[1],m[1]
+ m=re.search(r'ac\.nowcoder\.com/acm/contest/(\d+)/([A-Za-z0-9]+)',url)
+ if m:return 'nowcoder',f'nowcoder:{m[1]}:{m[2].upper()}',f'NC{m[1]}{m[2].upper()}'
+ for platform,pattern,prefix in [('loj',r'loj\.ac/p/(\d+)','LOJ'),('dotcpp',r'dotcpp\.com/oj/problem(\d+)\.html','DOTCPP'),('hdu',r'acm\.hdu\.edu\.cn/showproblem\.php\?pid=(\d+)','HDU')]:
+  m=re.search(pattern,url)
+  if m:return platform,f'{platform}:{m[1]}',prefix+m[1]
  return None
 
 def parse(payload):
