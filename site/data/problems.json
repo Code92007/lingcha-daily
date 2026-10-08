@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T17:11:08.848766+08:00",
+  "generatedAt": "2026-10-08T17:23:55.474166+08:00",
   "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
   "revision": 23455,
   "problems": [
@@ -1498,6 +1498,17 @@
       "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
       "row": 136,
       "date": "2026-04-03"
+    },
+    {
+      "key": "leetcode:evaluate-division",
+      "id": "evaluate-division",
+      "platform": "leetcode",
+      "url": "https://leetcode.cn/problems/evaluate-division/",
+      "difficulty": "",
+      "tags": "[并查集],[带权并查集]",
+      "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+      "row": 137,
+      "date": "2026-04-02"
     },
     {
       "key": "cf:1594:D",
@@ -13074,6 +13085,293 @@
   ],
   "pending": [
     {
+      "date": "2026-07-20",
+      "before": [
+        {
+          "key": "atcoder:abc384_d",
+          "id": "abc384_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc384/tasks/abc384_d",
+          "difficulty": "~CF1215",
+          "tags": "[前缀和],[滑动窗口],[同余]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 60,
+          "date": "2026-07-20"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc384_d",
+          "id": "abc384_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc384/tasks/abc384_d",
+          "difficulty": "~CF1215",
+          "tags": "[前缀和],[滑动窗口],[同余]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 60,
+          "date": "2026-07-20"
+        },
+        {
+          "key": "leetcode:minimum-size-subarray-in-infinite-array",
+          "id": "minimum-size-subarray-in-infinite-array",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimum-size-subarray-in-infinite-array/description/",
+          "difficulty": "~CF1215",
+          "tags": "[前缀和],[滑动窗口],[同余]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 60,
+          "date": "2026-07-20"
+        }
+      ],
+      "id": "aec1314996ec873b4e00af87"
+    },
+    {
+      "date": "2026-03-06",
+      "before": [
+        {
+          "key": "cf:725:F",
+          "id": "CF725F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/725/F",
+          "difficulty": "2900.0",
+          "tags": "[贪心],[博弈]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 156,
+          "date": "2026-03-06"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:725:F",
+          "id": "CF725F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/725/F",
+          "difficulty": "2900.0",
+          "tags": "[贪心],[博弈]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 156,
+          "date": "2026-03-06"
+        },
+        {
+          "key": "leetcode:stone-game-vi",
+          "id": "stone-game-vi",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/stone-game-vi/description/",
+          "difficulty": "2900.0",
+          "tags": "[贪心],[博弈]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 156,
+          "date": "2026-03-06"
+        }
+      ],
+      "id": "90337f92f4dde03c1743f8c9"
+    },
+    {
+      "date": "2025-05-06",
+      "before": [
+        {
+          "key": "cf:2093:D",
+          "id": "CF2093D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/2093/D",
+          "difficulty": "1400.0",
+          "tags": "[分治],[位运算]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 374,
+          "date": "2025-05-06"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:2093:D",
+          "id": "CF2093D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/2093/D",
+          "difficulty": "1400.0",
+          "tags": "[分治],[位运算]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 374,
+          "date": "2025-05-06"
+        },
+        {
+          "key": "leetcode:fill-a-special-grid",
+          "id": "fill-a-special-grid",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/fill-a-special-grid/",
+          "difficulty": "1400.0",
+          "tags": "[分治],[位运算]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 374,
+          "date": "2025-05-06"
+        }
+      ],
+      "id": "664f7d51b40e3a91b67f77e8"
+    },
+    {
+      "date": "2025-01-31",
+      "before": [
+        {
+          "key": "atcoder:aising2020_e",
+          "id": "aising2020_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/aising2020/tasks/aising2020_e",
+          "difficulty": "2133 (CF2324)",
+          "tags": "[贪心],[反悔贪心],[反悔堆],[有序集合],[并查集],[数组并查集]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 441,
+          "date": "2025-01-31"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:aising2020_e",
+          "id": "aising2020_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/aising2020/tasks/aising2020_e",
+          "difficulty": "2133 (CF2324)",
+          "tags": "[贪心],[反悔贪心],[反悔堆],[有序集合],[并查集],[数组并查集]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 441,
+          "date": "2025-01-31"
+        },
+        {
+          "key": "luogu:P2949",
+          "id": "P2949",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P2949",
+          "difficulty": "2133 (CF2324)",
+          "tags": "[贪心],[反悔贪心],[反悔堆],[有序集合],[并查集],[数组并查集]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 441,
+          "date": "2025-01-31"
+        }
+      ],
+      "id": "43ad2ffe76387587ffa70c40"
+    },
+    {
+      "date": "2025-01-28",
+      "before": [
+        {
+          "key": "cf:1932:C",
+          "id": "CF1932C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1932/C",
+          "difficulty": "1400.0",
+          "tags": "[离线]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 444,
+          "date": "2025-01-28"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1932:C",
+          "id": "CF1932C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1932/C",
+          "difficulty": "1400.0",
+          "tags": "[离线]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 444,
+          "date": "2025-01-28"
+        },
+        {
+          "key": "luogu:P4588",
+          "id": "P4588",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P4588",
+          "difficulty": "1400.0",
+          "tags": "[离线]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 444,
+          "date": "2025-01-28"
+        }
+      ],
+      "id": "81ddd6ba6e69ab5d3a6980a9"
+    },
+    {
+      "date": "2024-12-27",
+      "before": [
+        {
+          "key": "cf:2000:H",
+          "id": "CF2000H",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/2000/H",
+          "difficulty": "2200.0",
+          "tags": "[线段树],[动态开点线段树],[有序集合]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 466,
+          "date": "2024-12-27"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:2000:H",
+          "id": "CF2000H",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/2000/H",
+          "difficulty": "2200.0",
+          "tags": "[线段树],[动态开点线段树],[有序集合]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 466,
+          "date": "2024-12-27"
+        },
+        {
+          "key": "luogu:P2894",
+          "id": "P2894",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P2894",
+          "difficulty": "2200.0",
+          "tags": "[线段树],[动态开点线段树],[有序集合]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 466,
+          "date": "2024-12-27"
+        }
+      ],
+      "id": "a05bf9740cfc77fe30a31ebe"
+    },
+    {
+      "date": "2024-08-29",
+      "before": [
+        {
+          "key": "cf:1650:G",
+          "id": "CF1650G",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1650/G",
+          "difficulty": "2100.0",
+          "tags": "[最短路],[次短路],[BFS],[DP]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 552,
+          "date": "2024-08-29"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1650:G",
+          "id": "CF1650G",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1650/G",
+          "difficulty": "2100.0",
+          "tags": "[最短路],[次短路],[BFS],[DP]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 552,
+          "date": "2024-08-29"
+        },
+        {
+          "key": "luogu:P3953",
+          "id": "P3953",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P3953",
+          "difficulty": "2100.0",
+          "tags": "[最短路],[次短路],[BFS],[DP]",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 552,
+          "date": "2024-08-29"
+        }
+      ],
+      "id": "f92c5ef646644087adf2d014"
+    },
+    {
       "date": "2024-08-19",
       "before": [
         {
@@ -13113,6 +13411,99 @@
         }
       ],
       "id": "289eaca52a690cd2de5e0b4b"
+    },
+    {
+      "date": "2024-07-08",
+      "before": [
+        {
+          "key": "cf:1927:D",
+          "id": "CF1927D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1927/D",
+          "difficulty": "1300.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 590,
+          "date": "2024-07-08"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1927:D",
+          "id": "CF1927D",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1927/D",
+          "difficulty": "1300.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 590,
+          "date": "2024-07-08"
+        },
+        {
+          "key": "luogu:P1972",
+          "id": "P1972",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P1972",
+          "difficulty": "1300.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 590,
+          "date": "2024-07-08"
+        },
+        {
+          "key": "luogu:P3901",
+          "id": "P3901",
+          "platform": "luogu",
+          "url": "https://www.luogu.com.cn/problem/P3901",
+          "difficulty": "1300.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 590,
+          "date": "2024-07-08"
+        }
+      ],
+      "id": "5320a5061d520dc26576358c"
+    },
+    {
+      "date": "2024-05-31",
+      "before": [
+        {
+          "key": "cf:486:E",
+          "id": "CF486E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/486/E",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 616,
+          "date": "2024-05-31"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc354_f",
+          "id": "abc354_f",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc354/tasks/abc354_f",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 616,
+          "date": "2024-05-31"
+        },
+        {
+          "key": "cf:486:E",
+          "id": "CF486E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/486/E",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 616,
+          "date": "2024-05-31"
+        }
+      ],
+      "id": "d0bc017ee3451f26abd05c4a"
     },
     {
       "date": "2024-05-24",
@@ -13156,6 +13547,244 @@
       "id": "c57a50d9199aca99251572e9"
     },
     {
+      "date": "2024-05-23",
+      "before": [
+        {
+          "key": "cf:451:E",
+          "id": "CF451E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/451/E",
+          "difficulty": "2300\n实际 2000",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 622,
+          "date": "2024-05-23"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:451:E",
+          "id": "CF451E",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/451/E",
+          "difficulty": "2300\n实际 2000",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 622,
+          "date": "2024-05-23"
+        },
+        {
+          "key": "leetcode:distribute-candies-among-children-ii",
+          "id": "distribute-candies-among-children-ii",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/distribute-candies-among-children-ii/",
+          "difficulty": "2300\n实际 2000",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 622,
+          "date": "2024-05-23"
+        }
+      ],
+      "id": "c15fd669786bf5f2747c48c1"
+    },
+    {
+      "date": "2024-05-02",
+      "before": [
+        {
+          "key": "cf:213:C",
+          "id": "CF213C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/213/C",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 637,
+          "date": "2024-05-02"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:213:C",
+          "id": "CF213C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/213/C",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 637,
+          "date": "2024-05-02"
+        },
+        {
+          "key": "leetcode:cherry-pickup",
+          "id": "cherry-pickup",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/cherry-pickup/",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 637,
+          "date": "2024-05-02"
+        }
+      ],
+      "id": "89fa2c5c459a071858e3c55b"
+    },
+    {
+      "date": "2024-04-22",
+      "before": [
+        {
+          "key": "cf:940:B",
+          "id": "CF940B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/940/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 645,
+          "date": "2024-04-22"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:940:B",
+          "id": "CF940B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/940/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 645,
+          "date": "2024-04-22"
+        },
+        {
+          "key": "leetcode:integer-replacement",
+          "id": "integer-replacement",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/integer-replacement/description/",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 645,
+          "date": "2024-04-22"
+        },
+        {
+          "key": "leetcode:minimum-number-of-days-to-eat-n-oranges",
+          "id": "minimum-number-of-days-to-eat-n-oranges",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges/description/",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 645,
+          "date": "2024-04-22"
+        }
+      ],
+      "id": "0399f301c39f232596fa8a9e"
+    },
+    {
+      "date": "2024-04-05",
+      "before": [
+        {
+          "key": "atcoder:agc018_c",
+          "id": "agc018_c",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/agc018/tasks/agc018_c",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 656,
+          "date": "2024-04-05"
+        },
+        {
+          "key": "cf:730:I",
+          "id": "CF730I",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/730/I",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 656,
+          "date": "2024-04-05"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:agc018_c",
+          "id": "agc018_c",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/agc018/tasks/agc018_c",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 656,
+          "date": "2024-04-05"
+        },
+        {
+          "key": "cf:730:I",
+          "id": "CF730I",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/730/I",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 656,
+          "date": "2024-04-05"
+        },
+        {
+          "key": "leetcode:two-city-scheduling",
+          "id": "two-city-scheduling",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/two-city-scheduling/",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 656,
+          "date": "2024-04-05"
+        }
+      ],
+      "id": "8d731b56e9b7880bf8a1b3d7"
+    },
+    {
+      "date": "2024-04-03",
+      "before": [
+        {
+          "key": "cf:1623:C",
+          "id": "CF1623C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1623/C",
+          "difficulty": "1600.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 658,
+          "date": "2024-04-03"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1623:C",
+          "id": "CF1623C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1623/C",
+          "difficulty": "1600.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 658,
+          "date": "2024-04-03"
+        },
+        {
+          "key": "leetcode:minimize-maximum-of-array",
+          "id": "minimize-maximum-of-array",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/minimize-maximum-of-array/",
+          "difficulty": "1600.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 658,
+          "date": "2024-04-03"
+        }
+      ],
+      "id": "97f7bc506178004a78182d90"
+    },
+    {
       "date": "2024-03-07",
       "before": [
         {
@@ -13183,6 +13812,17 @@
           "date": "2024-03-07"
         },
         {
+          "key": "leetcode:count-the-number-of-square-free-subsets",
+          "id": "count-the-number-of-square-free-subsets",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/count-the-number-of-square-free-subsets/",
+          "difficulty": "2000.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 677,
+          "date": "2024-03-07"
+        },
+        {
           "key": "loj:2978",
           "id": "LOJ2978",
           "platform": "loj",
@@ -13194,7 +13834,7 @@
           "date": "2024-03-07"
         }
       ],
-      "id": "5b3d89ae3a8d4e9e050d82fe"
+      "id": "f213582a6d00b54e7b7ab3b5"
     },
     {
       "date": "2024-01-29",
@@ -13238,6 +13878,129 @@
       "id": "d587eb4a55bae1a25d4f63e0"
     },
     {
+      "date": "2023-11-27",
+      "before": [
+        {
+          "key": "cf:1009:B",
+          "id": "CF1009B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1009/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 750,
+          "date": "2023-11-27"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1009:B",
+          "id": "CF1009B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1009/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 750,
+          "date": "2023-11-27"
+        },
+        {
+          "key": "nowcoder:65259:C",
+          "id": "NC65259C",
+          "platform": "nowcoder",
+          "url": "https://ac.nowcoder.com/acm/contest/65259/C",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 750,
+          "date": "2023-11-27"
+        }
+      ],
+      "id": "a46cdfde5e258b97d30cab61"
+    },
+    {
+      "date": "2023-11-10",
+      "before": [
+        {
+          "key": "cf:1634:F",
+          "id": "CF1634F",
+          "platform": "cf",
+          "url": "https://codeforces.com/contest/1634/problem/F",
+          "difficulty": "2700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 761,
+          "date": "2023-11-10"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1634:F",
+          "id": "CF1634F",
+          "platform": "cf",
+          "url": "https://codeforces.com/contest/1634/problem/F",
+          "difficulty": "2700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 761,
+          "date": "2023-11-10"
+        },
+        {
+          "key": "cf:446:C",
+          "id": "CF446C",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/446/C",
+          "difficulty": "2700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 761,
+          "date": "2023-11-10"
+        }
+      ],
+      "id": "abb068633ab6b01b27c965ec"
+    },
+    {
+      "date": "2023-10-30",
+      "before": [
+        {
+          "key": "cf:26:B",
+          "id": "CF26B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/26/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 770,
+          "date": "2023-10-30"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:26:B",
+          "id": "CF26B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/26/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 770,
+          "date": "2023-10-30"
+        },
+        {
+          "key": "leetcode:longest-valid-parentheses",
+          "id": "longest-valid-parentheses",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/longest-valid-parentheses/",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 770,
+          "date": "2023-10-30"
+        }
+      ],
+      "id": "2bf8424767abba7f69881dc5"
+    },
+    {
       "date": "2023-10-12",
       "before": [
         {
@@ -13277,6 +14040,129 @@
         }
       ],
       "id": "c11ebb5ecc17e6bc0918eb14"
+    },
+    {
+      "date": "2023-09-14",
+      "before": [
+        {
+          "key": "atcoder:abc155_d",
+          "id": "abc155_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc155/tasks/abc155_d",
+          "difficulty": "1845.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 802,
+          "date": "2023-09-14"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc155_d",
+          "id": "abc155_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc155/tasks/abc155_d",
+          "difficulty": "1845.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 802,
+          "date": "2023-09-14"
+        },
+        {
+          "key": "leetcode:kth-smallest-product-of-two-sorted-arrays",
+          "id": "kth-smallest-product-of-two-sorted-arrays",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/kth-smallest-product-of-two-sorted-arrays/description/",
+          "difficulty": "1845.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 802,
+          "date": "2023-09-14"
+        }
+      ],
+      "id": "c7999083f4f6afb844babc81"
+    },
+    {
+      "date": "2023-09-11",
+      "before": [
+        {
+          "key": "atcoder:abc248_c",
+          "id": "abc248_c",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc248/tasks/abc248_c",
+          "difficulty": "787.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 805,
+          "date": "2023-09-11"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc248_c",
+          "id": "abc248_c",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc248/tasks/abc248_c",
+          "difficulty": "787.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 805,
+          "date": "2023-09-11"
+        },
+        {
+          "key": "iai:839",
+          "id": "YACS839",
+          "platform": "iai",
+          "url": "https://iai.sh.cn/problem/839",
+          "difficulty": "787.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 805,
+          "date": "2023-09-11"
+        }
+      ],
+      "id": "03d1f5fcfe33d5f1ba03b848"
+    },
+    {
+      "date": "2023-09-07",
+      "before": [
+        {
+          "key": "atcoder:abc309_f",
+          "id": "abc309_f",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc309/tasks/abc309_f",
+          "difficulty": "1619.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 807,
+          "date": "2023-09-07"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc309_f",
+          "id": "abc309_f",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc309/tasks/abc309_f",
+          "difficulty": "1619.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 807,
+          "date": "2023-09-07"
+        },
+        {
+          "key": "leetcode:maximum-height-by-stacking-cuboids",
+          "id": "maximum-height-by-stacking-cuboids",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/description/",
+          "difficulty": "1619.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 807,
+          "date": "2023-09-07"
+        }
+      ],
+      "id": "dcf88a81a13388a9417fb734"
     },
     {
       "date": "2023-08-29",
@@ -13320,6 +14206,151 @@
       "id": "3e9e8538fa012117fd5fb39c"
     },
     {
+      "date": "2023-08-17",
+      "before": [
+        {
+          "key": "atcoder:abc301_e",
+          "id": "abc301_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc301/tasks/abc301_e",
+          "difficulty": "1673.0",
+          "tags": "从集合论到位运算，常见位运算技巧分类总结！",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 822,
+          "date": "2023-08-17"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc301_e",
+          "id": "abc301_e",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc301/tasks/abc301_e",
+          "difficulty": "1673.0",
+          "tags": "从集合论到位运算，常见位运算技巧分类总结！",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 822,
+          "date": "2023-08-17"
+        },
+        {
+          "key": "leetcode:xun-bao",
+          "id": "xun-bao",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/xun-bao/",
+          "difficulty": "1673.0",
+          "tags": "从集合论到位运算，常见位运算技巧分类总结！",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 822,
+          "date": "2023-08-17"
+        }
+      ],
+      "id": "21e4405e22f3e48486a1c1ad"
+    },
+    {
+      "date": "2023-08-09",
+      "before": [
+        {
+          "key": "atcoder:abc214_d",
+          "id": "abc214_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc214/tasks/abc214_d",
+          "difficulty": "1341.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 828,
+          "date": "2023-08-09"
+        },
+        {
+          "key": "cf:915:F",
+          "id": "CF915F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/915/F",
+          "difficulty": "1341.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 828,
+          "date": "2023-08-09"
+        }
+      ],
+      "after": [
+        {
+          "key": "atcoder:abc214_d",
+          "id": "abc214_d",
+          "platform": "atcoder",
+          "url": "https://atcoder.jp/contests/abc214/tasks/abc214_d",
+          "difficulty": "1341.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 828,
+          "date": "2023-08-09"
+        },
+        {
+          "key": "cf:915:F",
+          "id": "CF915F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/915/F",
+          "difficulty": "1341.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 828,
+          "date": "2023-08-09"
+        },
+        {
+          "key": "leetcode:number-of-good-paths",
+          "id": "number-of-good-paths",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/number-of-good-paths/",
+          "difficulty": "1341.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 828,
+          "date": "2023-08-09"
+        }
+      ],
+      "id": "5bdd60358d66be7237460fd9"
+    },
+    {
+      "date": "2023-07-26",
+      "before": [
+        {
+          "key": "cf:193:A",
+          "id": "CF193A",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/193/A",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 838,
+          "date": "2023-07-26"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:193:A",
+          "id": "CF193A",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/193/A",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 838,
+          "date": "2023-07-26"
+        },
+        {
+          "key": "leetcode:disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+          "id": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/description/",
+          "difficulty": "1700.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 838,
+          "date": "2023-07-26"
+        }
+      ],
+      "id": "30e4baf74d9829f9ad9560b5"
+    },
+    {
       "date": "2023-07-17",
       "before": [
         {
@@ -13359,6 +14390,88 @@
         }
       ],
       "id": "76f310a32428abde415de925"
+    },
+    {
+      "date": "2023-06-19",
+      "before": [
+        {
+          "key": "cf:602:B",
+          "id": "CF602B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/602/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 866,
+          "date": "2023-06-19"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:602:B",
+          "id": "CF602B",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/602/B",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 866,
+          "date": "2023-06-19"
+        },
+        {
+          "key": "leetcode:longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+          "id": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+          "difficulty": "1400.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 866,
+          "date": "2023-06-19"
+        }
+      ],
+      "id": "38b23b0c1240301d84e2fbb5"
+    },
+    {
+      "date": "2023-06-02",
+      "before": [
+        {
+          "key": "cf:1272:F",
+          "id": "CF1272F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1272/F",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 877,
+          "date": "2023-06-02"
+        }
+      ],
+      "after": [
+        {
+          "key": "cf:1272:F",
+          "id": "CF1272F",
+          "platform": "cf",
+          "url": "https://codeforces.com/problemset/problem/1272/F",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 877,
+          "date": "2023-06-02"
+        },
+        {
+          "key": "leetcode:shortest-common-supersequence",
+          "id": "shortest-common-supersequence",
+          "platform": "leetcode",
+          "url": "https://leetcode.cn/problems/shortest-common-supersequence/",
+          "difficulty": "2200.0",
+          "tags": "",
+          "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+          "row": 877,
+          "date": "2023-06-02"
+        }
+      ],
+      "id": "6989879e42596a3db2cd9602"
     },
     {
       "date": "2023-05-02",
@@ -13947,11 +15060,6 @@
     }
   ],
   "skipped": [
-    {
-      "date": "2026-04-02",
-      "row": 137,
-      "reason": "原表题目栏无可识别题目链接"
-    },
     {
       "date": "2023-06-16",
       "row": 867,

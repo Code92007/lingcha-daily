@@ -27,6 +27,15 @@ class IngestionTests(unittest.TestCase):
   html='<script id="lentille-context" type="application/json">'+json.dumps({'status':200,'data':{'passed':[{'pid':'P1001'},{'pid':'CF1196B'}],'tried':[{'pid':'P5677'}]}})+'</script>'
   self.assertEqual(parse_html(html),['CF1196B','P1001'])
   with self.assertRaises(ValueError):parse_html('<html>Login required</html>')
+ def test_hidden_hyperlinks_are_extracted_without_polluting_display_text(self):
+  from source import rich,rich_links
+  def pb(k,b):
+   self.assertLess(len(b),128)
+   return bytes([k*8+2,len(b)])+b
+  url='https://iai.sh.cn/problem/839'
+  run=pb(3,pb(1,'相关题目'.encode()))+pb(7,pb(11,pb(1,url.encode())))
+  cell=pb(3,run)
+  self.assertEqual(rich(cell),'相关题目');self.assertEqual(rich_links(cell),[url])
  def test_numeric_pool_reserved_literals(self):
   from proto import fields
   with self.assertRaises(ValueError):fields(b'\x00')
@@ -36,5 +45,5 @@ class IngestionTests(unittest.TestCase):
    datetime.date.fromisoformat(p['date']);self.assertEqual(identity(p['url'])[1],p['key'])
   self.assertTrue({'cf','atcoder','luogu'}.issubset(set(p['platform'] for p in ps)))
   candidates=ps+[p for c in data['pending'] for p in c['after']]
-  self.assertEqual(set(p['platform'] for p in candidates),{'cf','atcoder','luogu','leetcode','nowcoder','loj','dotcpp','hdu'})
+  self.assertEqual(set(p['platform'] for p in candidates),{'cf','atcoder','luogu','leetcode','nowcoder','loj','dotcpp','hdu','iai'})
 if __name__=='__main__':unittest.main()

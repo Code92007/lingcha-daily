@@ -12,3 +12,5 @@ test('all additional platforms normalize canonical IDs and URLs',()=>{
  const pairs=[['https://leetcode-cn.com/problems/maximum-subarray/','leetcode:maximum-subarray'],['https://leetcode.cn/contest/weekly-contest-366/problems/apply-operations-to-make-two-strings-equal/','leetcode:apply-operations-to-make-two-strings-equal'],['https://ac.nowcoder.com/acm/contest/76652/B','nowcoder:76652:B'],['NC76652B','nowcoder:76652:B'],['https://loj.ac/p/2978','loj:2978'],['LOJ2978','loj:2978'],['https://www.dotcpp.com/oj/problem2667.html','dotcpp:2667'],['DOTCPP2667','dotcpp:2667'],['http://acm.hdu.edu.cn/showproblem.php?pid=6357','hdu:6357'],['HDU6357','hdu:6357']];for(const [input,key] of pairs){assert.equal(canonical(input),key);assert.equal(canonical(key),key);}
  assert.deepEqual(importPassed('leetcode:maximum-subarray NC76652B LOJ2978 DOTCPP2667 HDU6357'),['leetcode:maximum-subarray','nowcoder:76652:B','loj:2978','dotcpp:2667','hdu:6357']);
 });
+
+test('IAI OJ hidden hyperlink platform',()=>{assert.equal(canonical('https://iai.sh.cn/problem/839'),'iai:839');assert.equal(canonical('IAI839'),'iai:839');assert.deepEqual(importPassed('IAI839'),['iai:839']);});

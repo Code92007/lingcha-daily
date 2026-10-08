@@ -1,4 +1,4 @@
-export const platforms={cf:'Codeforces',at:'AtCoder',lg:'洛谷',leetcode:'LeetCode',nowcoder:'牛客',loj:'LibreOJ',dotcpp:'Dotcpp',hdu:'HDU'};
+export const platforms={cf:'Codeforces',at:'AtCoder',lg:'洛谷',leetcode:'LeetCode'};
 export function canonical(value){
  const v=String(value).trim();let m;
  if((m=v.match(/codeforces\.com\/(?:problemset\/problem\/(\d+)\/([a-z\d]+)|(?:contest|gym)\/(\d+)\/problem\/([a-z\d]+))/i)))return `cf:${m[1]||m[3]}:${(m[2]||m[4]).toUpperCase()}`;
@@ -13,7 +13,7 @@ export function canonical(value){
  if((m=v.match(/^leetcode:([a-z0-9-]+)$/i)))return 'leetcode:'+m[1].toLowerCase();
  if((m=v.match(/ac\.nowcoder\.com\/acm\/contest\/(\d+)\/([a-z0-9]+)/i)))return `nowcoder:${m[1]}:${m[2].toUpperCase()}`;
  if((m=v.match(/^(?:nowcoder:|NC)(\d+):?([a-z][a-z0-9]*)$/i)))return `nowcoder:${m[1]}:${m[2].toUpperCase()}`;
- for(const [platform,pattern,prefix] of [['loj',/loj\.ac\/p\/(\d+)/i,'LOJ'],['dotcpp',/dotcpp\.com\/oj\/problem(\d+)\.html/i,'DOTCPP'],['hdu',/acm\.hdu\.edu\.cn\/showproblem\.php\?pid=(\d+)/i,'HDU']]){
+ for(const [platform,pattern,prefix] of [['loj',/loj\.ac\/p\/(\d+)/i,'LOJ'],['dotcpp',/dotcpp\.com\/oj\/problem(\d+)\.html/i,'DOTCPP'],['hdu',/acm\.hdu\.edu\.cn\/showproblem\.php\?pid=(\d+)/i,'HDU'],['iai',/iai\.sh\.cn\/problem\/(\d+)/i,'(?:IAI|YACS)']]){
   m=v.match(pattern)||v.match(new RegExp(`^(?:${platform}:|${prefix})(\\d+)$`,'i'));if(m)return `${platform}:${m[1]}`;
  }
  if(/^luogu:/i.test(id))return canonical(id.slice(6));
@@ -29,6 +29,6 @@ export function statusOf(p,profiles,manual){if(manual[p.key])return 'solved';if(
 export function unique(ps){return [...new Map(ps.map(p=>[p.key,p])).values()];}
 export function stats(ps,profiles=[],manual={}){const u=unique(ps);return {total:u.length,solved:u.filter(p=>statusOf(p,profiles,manual)==='solved').length,appearances:ps.length};}
 export function importPassed(text){
- const tokens=text.match(/https?:\/\/[^\s,;"<>]+|(?:CF\d+[A-Z]\w*|AT_[a-z\d]+_\w+|(?:P|B|U|SP|UVA|AT_)\d+|NC\d+[A-Z]\w*|(?:LOJ|HDU|DOTCPP)\d+|(?:leetcode:[a-z0-9-]+|nowcoder:\d+:[A-Z]\w*|(?:loj|hdu|dotcpp):\d+))/gi)||[];
+ const tokens=text.match(/https?:\/\/[^\s,;"<>]+|(?:CF\d+[A-Z]\w*|AT_[a-z\d]+_\w+|(?:P|B|U|SP|UVA|AT_)\d+|NC\d+[A-Z]\w*|(?:LOJ|HDU|DOTCPP|IAI|YACS)\d+|(?:leetcode:[a-z0-9-]+|nowcoder:\d+:[A-Z]\w*|(?:loj|hdu|dotcpp|iai):\d+))/gi)||[];
  const keys=[...new Set(tokens.map(canonical).filter(Boolean))];if(!keys.length)throw Error('未识别到题号，请只粘贴“已通过题目”列表。');return keys;
 }

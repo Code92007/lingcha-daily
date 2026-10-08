@@ -21,6 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,6 +35,7 @@ jobs:
           python3 -m unittest discover -s tests
           npm test
       - name: Read public snapshot and incrementally merge
+        if: github.event_name != 'push'
         env:
           APPROVE_CHANGE: ${{ inputs.approve_change }}
         run: python3 scripts/build.py --approve-change "$APPROVE_CHANGE"

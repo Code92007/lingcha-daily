@@ -1,5 +1,5 @@
 """Anonymous public Tencent sheet snapshot; no credentials are stored."""
-import base64, zlib, struct, json, datetime, re, urllib.request, http.cookiejar, time
+import base64, zlib, struct, json, datetime, re, urllib.request, http.cookiejar, time, subprocess, tempfile
 from proto import fields
 SOURCE='https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2'
 def values(b,k):return [v for n,w,v in fields(b) if n==k]
@@ -7,34 +7,47 @@ def one(b,k,default=b''):return next(iter(values(b,k)),default)
 def text(b):return one(b,1).decode('utf-8')
 def rich(b):
  return ''.join(text(one(v,3)) for v in values(b,3) if one(v,3))
+def rich_links(b):
+ links=[]
+ for run in values(b,3):
+  target=one(one(run,7),11)
+  if target and text(target).startswith(('https://','http://')):links.append(text(target))
+ return links
+
 def decode(payload):
  t=payload['clientVars']['collab_client_vars']['initialAttributedText']['text'][0]
  b=zlib.decompress(base64.b64decode(t['related_sheet']))
  mutations=values(one(b,1),5)
  sheets=[one(m,19) for m in mutations if one(m,1,0)==18]
  if len(sheets)!=1:raise ValueError('Unexpected sheet encoding')
- sheet=sheets[0]; shared=one(sheet,5)
- pools={4:[text(v) for v in values(shared,1)],6:[rich(v) for v in values(shared,2)],2:[struct.unpack('<d',one(v,1))[0] for v in values(shared,3)]}
- rows={}
+ sheet=sheets[0]; shared=one(sheet,5);raw_rich=values(shared,2)
+ pools={4:[text(v) for v in values(shared,1)],6:[rich(v) for v in raw_rich],2:[struct.unpack('<d',one(v,1))[0] for v in values(shared,3)]}
+ rows={};hyperlinks={}
  for cell in values(sheet,6):
   row=one(cell,1,0); col=one(cell,2,0);v=one(cell,3);typ=one(v,1,0)
   if typ not in pools:continue
   idx=one(one(v,2),1,0)
   # Tencent reserves numeric IDs 0..128 for those literal integers.
+  if col==1 and typ==6:
+   hyperlinks[row]=rich_links(raw_rich[idx])
   rows.setdefault(row,{})[col]=(idx if idx<129 else pools[typ][idx-129]) if typ==2 else pools[typ][idx]
- return rows,t
+ return rows,{**t,'hyperlinks':hyperlinks}
 
 def fetch():
- jar=http.cookiejar.CookieJar();opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
- headers={'User-Agent':'Mozilla/5.0','Referer':SOURCE}
- for attempt in range(3):
-  try:
-   opener.open(urllib.request.Request(SOURCE,headers=headers),timeout=90).read()
-   url='https://docs.qq.com/dop-api/opendoc?id=DWGFoRGVZRmxNaXFz&tab=BB08J2&outformat=1&normal=1&noEscape=1'
-   return json.load(opener.open(urllib.request.Request(url,headers=headers),timeout=90))
-  except Exception:
-   if attempt==2:raise
-   time.sleep(3*(attempt+1))
+ # GitHub runners may have DNS IPv6 answers without an IPv6 route.
+ # curl -4 keeps anonymous cookie handling and explicitly uses IPv4.
+ with tempfile.TemporaryDirectory(prefix='lingcha-public-') as directory:
+  cookies=directory+'/cookies'
+  base=['curl','-4','--fail','--silent','--show-error','--location','--connect-timeout','15','--max-time','60','--user-agent','Mozilla/5.0','--referer',SOURCE]
+  url='https://docs.qq.com/dop-api/opendoc?id=DWGFoRGVZRmxNaXFz&tab=BB08J2&outformat=1&normal=1&noEscape=1'
+  for attempt in range(3):
+   try:
+    subprocess.run(base+['--cookie-jar',cookies,'--output',directory+'/page',SOURCE],check=True,timeout=70,capture_output=True)
+    response=subprocess.run(base+['--cookie',cookies,url],check=True,timeout=70,capture_output=True)
+    return json.loads(response.stdout)
+   except (subprocess.SubprocessError,ValueError):
+    if attempt==2:raise RuntimeError('Public Tencent snapshot unavailable; preserving committed data')
+    time.sleep(3*(attempt+1))
 
 def identity(url):
  m=re.search(r'codeforces.com/(?:problemset/problem/(\d+)/([A-Za-z0-9]+)|(?:contest|gym)/(\d+)/problem/([A-Za-z0-9]+))',url)
@@ -52,7 +65,7 @@ def identity(url):
  if m:return 'leetcode','leetcode:'+m[1],m[1]
  m=re.search(r'ac\.nowcoder\.com/acm/contest/(\d+)/([A-Za-z0-9]+)',url)
  if m:return 'nowcoder',f'nowcoder:{m[1]}:{m[2].upper()}',f'NC{m[1]}{m[2].upper()}'
- for platform,pattern,prefix in [('loj',r'loj\.ac/p/(\d+)','LOJ'),('dotcpp',r'dotcpp\.com/oj/problem(\d+)\.html','DOTCPP'),('hdu',r'acm\.hdu\.edu\.cn/showproblem\.php\?pid=(\d+)','HDU')]:
+ for platform,pattern,prefix in [('loj',r'loj\.ac/p/(\d+)','LOJ'),('dotcpp',r'dotcpp\.com/oj/problem(\d+)\.html','DOTCPP'),('hdu',r'acm\.hdu\.edu\.cn/showproblem\.php\?pid=(\d+)','HDU'),('iai',r'iai\.sh\.cn/problem/(\d+)','YACS')]:
   m=re.search(pattern,url)
   if m:return platform,f'{platform}:{m[1]}',prefix+m[1]
  return None
@@ -64,7 +77,7 @@ def parse(payload):
   date=c.get(0)
   if not isinstance(date,(float,int)):continue
   day=(datetime.date(1899,12,30)+datetime.timedelta(days=int(date))).isoformat()
-  links=re.findall(r'https?://[^\s<>"，。]+',str(c.get(1,'')))
+  links=re.findall(r'https?://[^\s<>"，。]+',str(c.get(1,'')))+t['hyperlinks'].get(row,[])
   problems=[]
   for url in links:
    ident=identity(url)
