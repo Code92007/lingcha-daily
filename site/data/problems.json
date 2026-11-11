@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-11-11T05:42:04.722544+08:00",
+  "generatedAt": "2026-11-11T12:00:19.866429+08:00",
   "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-  "revision": 23748,
+  "revision": 23756,
   "problems": [
+    {
+      "key": "cf:2009:G2",
+      "id": "CF2009G2",
+      "platform": "cf",
+      "url": "https://codeforces.com/problemset/problem/2009/G2",
+      "difficulty": "洛谷绿",
+      "tags": "[滑动窗口],[不定长滑动窗口]",
+      "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+      "row": 2,
+      "date": "2026-11-11"
+    },
+    {
+      "key": "luogu:P3069",
+      "id": "P3069",
+      "platform": "luogu",
+      "url": "https://www.luogu.com.cn/problem/P3069",
+      "difficulty": "洛谷绿",
+      "tags": "[滑动窗口],[不定长滑动窗口]",
+      "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
+      "row": 2,
+      "date": "2026-11-11"
+    },
     {
       "key": "cf:1799:B",
       "id": "CF1799B",
@@ -13416,7 +13438,7 @@
           "difficulty": "",
           "tags": "[线段树],[Lazy 线段树],[扫描线]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 5,
+          "row": 6,
           "date": "2026-11-05"
         }
       ],
@@ -13446,7 +13468,7 @@
           "difficulty": "洛谷蓝",
           "tags": "[DP],[背包],[0-1 背包],[状态设计]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 24,
+          "row": 25,
           "date": "2026-10-09"
         }
       ],
@@ -13476,7 +13498,7 @@
           "difficulty": "~CF1215",
           "tags": "[前缀和],[滑动窗口],[同余]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 83,
+          "row": 84,
           "date": "2026-07-20"
         },
         {
@@ -13487,7 +13509,7 @@
           "difficulty": "~CF1215",
           "tags": "[前缀和],[滑动窗口],[同余]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 83,
+          "row": 84,
           "date": "2026-07-20"
         }
       ],
@@ -13517,7 +13539,7 @@
           "difficulty": "2900.0",
           "tags": "[贪心],[博弈]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 179,
+          "row": 180,
           "date": "2026-03-06"
         },
         {
@@ -13528,7 +13550,7 @@
           "difficulty": "2900.0",
           "tags": "[贪心],[博弈]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 179,
+          "row": 180,
           "date": "2026-03-06"
         }
       ],
@@ -13558,7 +13580,7 @@
           "difficulty": "1400.0",
           "tags": "[分治],[位运算]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 397,
+          "row": 398,
           "date": "2025-05-06"
         },
         {
@@ -13569,7 +13591,7 @@
           "difficulty": "1400.0",
           "tags": "[分治],[位运算]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 397,
+          "row": 398,
           "date": "2025-05-06"
         }
       ],
@@ -13599,7 +13621,7 @@
           "difficulty": "2133 (CF2324)",
           "tags": "[贪心],[反悔贪心],[反悔堆],[有序集合],[并查集],[数组并查集]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 464,
+          "row": 465,
           "date": "2025-01-31"
         },
         {
@@ -13610,7 +13632,7 @@
           "difficulty": "2133 (CF2324)",
           "tags": "[贪心],[反悔贪心],[反悔堆],[有序集合],[并查集],[数组并查集]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 464,
+          "row": 465,
           "date": "2025-01-31"
         }
       ],
@@ -13640,7 +13662,7 @@
           "difficulty": "1400.0",
           "tags": "[离线]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 467,
+          "row": 468,
           "date": "2025-01-28"
         },
         {
@@ -13651,7 +13673,7 @@
           "difficulty": "1400.0",
           "tags": "[离线]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 467,
+          "row": 468,
           "date": "2025-01-28"
         }
       ],
@@ -13681,7 +13703,7 @@
           "difficulty": "2200.0",
           "tags": "[线段树],[动态开点线段树],[有序集合]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 489,
+          "row": 490,
           "date": "2024-12-27"
         },
         {
@@ -13692,7 +13714,7 @@
           "difficulty": "2200.0",
           "tags": "[线段树],[动态开点线段树],[有序集合]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 489,
+          "row": 490,
           "date": "2024-12-27"
         }
       ],
@@ -13722,7 +13744,7 @@
           "difficulty": "2100.0",
           "tags": "[最短路],[次短路],[BFS],[DP]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 575,
+          "row": 576,
           "date": "2024-08-29"
         },
         {
@@ -13733,7 +13755,7 @@
           "difficulty": "2100.0",
           "tags": "[最短路],[次短路],[BFS],[DP]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 575,
+          "row": 576,
           "date": "2024-08-29"
         }
       ],
@@ -13763,7 +13785,7 @@
           "difficulty": "1300.0",
           "tags": "[贪心]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 583,
+          "row": 584,
           "date": "2024-08-19"
         },
         {
@@ -13774,7 +13796,7 @@
           "difficulty": "1300.0",
           "tags": "[贪心]",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 583,
+          "row": 584,
           "date": "2024-08-19"
         }
       ],
@@ -13804,7 +13826,7 @@
           "difficulty": "1300.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 613,
+          "row": 614,
           "date": "2024-07-08"
         },
         {
@@ -13815,7 +13837,7 @@
           "difficulty": "1300.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 613,
+          "row": 614,
           "date": "2024-07-08"
         },
         {
@@ -13826,7 +13848,7 @@
           "difficulty": "1300.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 613,
+          "row": 614,
           "date": "2024-07-08"
         }
       ],
@@ -13856,7 +13878,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 639,
+          "row": 640,
           "date": "2024-05-31"
         },
         {
@@ -13867,7 +13889,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 639,
+          "row": 640,
           "date": "2024-05-31"
         }
       ],
@@ -13897,7 +13919,7 @@
           "difficulty": "",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 644,
+          "row": 645,
           "date": "2024-05-24"
         },
         {
@@ -13908,7 +13930,7 @@
           "difficulty": "",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 644,
+          "row": 645,
           "date": "2024-05-24"
         }
       ],
@@ -13938,7 +13960,7 @@
           "difficulty": "2300\n实际 2000",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 645,
+          "row": 646,
           "date": "2024-05-23"
         },
         {
@@ -13949,7 +13971,7 @@
           "difficulty": "2300\n实际 2000",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 645,
+          "row": 646,
           "date": "2024-05-23"
         }
       ],
@@ -13979,7 +14001,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 660,
+          "row": 661,
           "date": "2024-05-02"
         },
         {
@@ -13990,7 +14012,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 660,
+          "row": 661,
           "date": "2024-05-02"
         }
       ],
@@ -14020,7 +14042,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 668,
+          "row": 669,
           "date": "2024-04-22"
         },
         {
@@ -14031,7 +14053,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 668,
+          "row": 669,
           "date": "2024-04-22"
         },
         {
@@ -14042,7 +14064,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 668,
+          "row": 669,
           "date": "2024-04-22"
         }
       ],
@@ -14083,7 +14105,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 679,
+          "row": 680,
           "date": "2024-04-05"
         },
         {
@@ -14094,7 +14116,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 679,
+          "row": 680,
           "date": "2024-04-05"
         },
         {
@@ -14105,7 +14127,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 679,
+          "row": 680,
           "date": "2024-04-05"
         }
       ],
@@ -14135,7 +14157,7 @@
           "difficulty": "1600.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 681,
+          "row": 682,
           "date": "2024-04-03"
         },
         {
@@ -14146,7 +14168,7 @@
           "difficulty": "1600.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 681,
+          "row": 682,
           "date": "2024-04-03"
         }
       ],
@@ -14176,7 +14198,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 700,
+          "row": 701,
           "date": "2024-03-07"
         },
         {
@@ -14187,7 +14209,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 700,
+          "row": 701,
           "date": "2024-03-07"
         },
         {
@@ -14198,7 +14220,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 700,
+          "row": 701,
           "date": "2024-03-07"
         }
       ],
@@ -14228,7 +14250,7 @@
           "difficulty": "1200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 728,
+          "row": 729,
           "date": "2024-01-29"
         },
         {
@@ -14239,7 +14261,7 @@
           "difficulty": "1200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 728,
+          "row": 729,
           "date": "2024-01-29"
         }
       ],
@@ -14269,7 +14291,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 773,
+          "row": 774,
           "date": "2023-11-27"
         },
         {
@@ -14280,7 +14302,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 773,
+          "row": 774,
           "date": "2023-11-27"
         }
       ],
@@ -14310,7 +14332,7 @@
           "difficulty": "2700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 784,
+          "row": 785,
           "date": "2023-11-10"
         },
         {
@@ -14321,7 +14343,7 @@
           "difficulty": "2700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 784,
+          "row": 785,
           "date": "2023-11-10"
         }
       ],
@@ -14351,7 +14373,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 793,
+          "row": 794,
           "date": "2023-10-30"
         },
         {
@@ -14362,7 +14384,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 793,
+          "row": 794,
           "date": "2023-10-30"
         }
       ],
@@ -14392,7 +14414,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 805,
+          "row": 806,
           "date": "2023-10-12"
         },
         {
@@ -14403,7 +14425,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 805,
+          "row": 806,
           "date": "2023-10-12"
         }
       ],
@@ -14433,7 +14455,7 @@
           "difficulty": "1845.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 825,
+          "row": 826,
           "date": "2023-09-14"
         },
         {
@@ -14444,7 +14466,7 @@
           "difficulty": "1845.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 825,
+          "row": 826,
           "date": "2023-09-14"
         }
       ],
@@ -14474,7 +14496,7 @@
           "difficulty": "787.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 828,
+          "row": 829,
           "date": "2023-09-11"
         },
         {
@@ -14485,7 +14507,7 @@
           "difficulty": "787.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 828,
+          "row": 829,
           "date": "2023-09-11"
         }
       ],
@@ -14515,7 +14537,7 @@
           "difficulty": "1619.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 830,
+          "row": 831,
           "date": "2023-09-07"
         },
         {
@@ -14526,7 +14548,7 @@
           "difficulty": "1619.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 830,
+          "row": 831,
           "date": "2023-09-07"
         }
       ],
@@ -14556,7 +14578,7 @@
           "difficulty": "792.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 837,
+          "row": 838,
           "date": "2023-08-29"
         },
         {
@@ -14567,7 +14589,7 @@
           "difficulty": "792.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 837,
+          "row": 838,
           "date": "2023-08-29"
         }
       ],
@@ -14597,7 +14619,7 @@
           "difficulty": "1673.0",
           "tags": "从集合论到位运算，常见位运算技巧分类总结！",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 845,
+          "row": 846,
           "date": "2023-08-17"
         },
         {
@@ -14608,7 +14630,7 @@
           "difficulty": "1673.0",
           "tags": "从集合论到位运算，常见位运算技巧分类总结！",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 845,
+          "row": 846,
           "date": "2023-08-17"
         }
       ],
@@ -14649,7 +14671,7 @@
           "difficulty": "1341.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 851,
+          "row": 852,
           "date": "2023-08-09"
         },
         {
@@ -14660,7 +14682,7 @@
           "difficulty": "1341.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 851,
+          "row": 852,
           "date": "2023-08-09"
         },
         {
@@ -14671,7 +14693,7 @@
           "difficulty": "1341.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 851,
+          "row": 852,
           "date": "2023-08-09"
         }
       ],
@@ -14701,7 +14723,7 @@
           "difficulty": "1700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 861,
+          "row": 862,
           "date": "2023-07-26"
         },
         {
@@ -14712,7 +14734,7 @@
           "difficulty": "1700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 861,
+          "row": 862,
           "date": "2023-07-26"
         }
       ],
@@ -14742,7 +14764,7 @@
           "difficulty": "1400.0",
           "tags": "状态机 DP",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 869,
+          "row": 870,
           "date": "2023-07-17"
         },
         {
@@ -14753,7 +14775,7 @@
           "difficulty": "1400.0",
           "tags": "状态机 DP",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 869,
+          "row": 870,
           "date": "2023-07-17"
         }
       ],
@@ -14783,7 +14805,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 889,
+          "row": 890,
           "date": "2023-06-19"
         },
         {
@@ -14794,7 +14816,7 @@
           "difficulty": "1400.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 889,
+          "row": 890,
           "date": "2023-06-19"
         }
       ],
@@ -14824,7 +14846,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 900,
+          "row": 901,
           "date": "2023-06-02"
         },
         {
@@ -14835,7 +14857,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 900,
+          "row": 901,
           "date": "2023-06-02"
         }
       ],
@@ -14865,7 +14887,7 @@
           "difficulty": "1500.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 923,
+          "row": 924,
           "date": "2023-05-02"
         },
         {
@@ -14876,7 +14898,7 @@
           "difficulty": "1500.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 923,
+          "row": 924,
           "date": "2023-05-02"
         }
       ],
@@ -14906,7 +14928,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 959,
+          "row": 960,
           "date": "2023-03-13"
         },
         {
@@ -14917,7 +14939,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 959,
+          "row": 960,
           "date": "2023-03-13"
         }
       ],
@@ -14947,7 +14969,7 @@
           "difficulty": "1700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 964,
+          "row": 965,
           "date": "2023-03-06"
         },
         {
@@ -14958,7 +14980,7 @@
           "difficulty": "1700.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 964,
+          "row": 965,
           "date": "2023-03-06"
         }
       ],
@@ -14988,7 +15010,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 998,
+          "row": 999,
           "date": "2023-01-17"
         },
         {
@@ -14999,7 +15021,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 998,
+          "row": 999,
           "date": "2023-01-17"
         },
         {
@@ -15010,7 +15032,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 998,
+          "row": 999,
           "date": "2023-01-17"
         }
       ],
@@ -15040,7 +15062,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1007,
+          "row": 1008,
           "date": "2023-01-04"
         },
         {
@@ -15051,7 +15073,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1007,
+          "row": 1008,
           "date": "2023-01-04"
         }
       ],
@@ -15081,7 +15103,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1065,
+          "row": 1066,
           "date": "2022-10-14"
         },
         {
@@ -15092,7 +15114,7 @@
           "difficulty": "2200.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1065,
+          "row": 1066,
           "date": "2022-10-14"
         }
       ],
@@ -15122,7 +15144,7 @@
           "difficulty": "1900.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1075,
+          "row": 1076,
           "date": "2022-10-01"
         },
         {
@@ -15133,7 +15155,7 @@
           "difficulty": "1900.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1075,
+          "row": 1076,
           "date": "2022-10-01"
         }
       ],
@@ -15163,7 +15185,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1080,
+          "row": 1081,
           "date": "2022-09-26"
         },
         {
@@ -15174,7 +15196,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1080,
+          "row": 1081,
           "date": "2022-09-26"
         }
       ],
@@ -15204,7 +15226,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1098,
+          "row": 1099,
           "date": "2022-08-31"
         },
         {
@@ -15215,7 +15237,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1098,
+          "row": 1099,
           "date": "2022-08-31"
         }
       ],
@@ -15245,7 +15267,7 @@
           "difficulty": "1700.0",
           "tags": "@hqzture 说可以 O(n)，原理见 \nhttps://leetcode.cn/problems/total-hamming-distance/solution/onwei-yun-suan-by-hqztrue-z5oo/\nhttps://zhuanlan.zhihu.com/p/72730434",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1111,
+          "row": 1112,
           "date": "2022-08-12"
         },
         {
@@ -15256,7 +15278,7 @@
           "difficulty": "1700.0",
           "tags": "@hqzture 说可以 O(n)，原理见 \nhttps://leetcode.cn/problems/total-hamming-distance/solution/onwei-yun-suan-by-hqztrue-z5oo/\nhttps://zhuanlan.zhihu.com/p/72730434",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1111,
+          "row": 1112,
           "date": "2022-08-12"
         }
       ],
@@ -15286,7 +15308,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1150,
+          "row": 1151,
           "date": "2022-06-21"
         },
         {
@@ -15297,7 +15319,7 @@
           "difficulty": "1800.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1150,
+          "row": 1151,
           "date": "2022-06-21"
         }
       ],
@@ -15327,7 +15349,7 @@
           "difficulty": "1500.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1180,
+          "row": 1181,
           "date": "2022-05-10"
         },
         {
@@ -15338,7 +15360,7 @@
           "difficulty": "1500.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1180,
+          "row": 1181,
           "date": "2022-05-10"
         }
       ],
@@ -15368,7 +15390,7 @@
           "difficulty": "2000.0",
           "tags": "群主写的 KMP 文章\n\nhttps://www.zhihu.com/question/21923021/answer/37475572",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1190,
+          "row": 1191,
           "date": "2022-04-27"
         },
         {
@@ -15379,7 +15401,7 @@
           "difficulty": "2000.0",
           "tags": "群主写的 KMP 文章\n\nhttps://www.zhihu.com/question/21923021/answer/37475572",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1190,
+          "row": 1191,
           "date": "2022-04-27"
         }
       ],
@@ -15409,7 +15431,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1191,
+          "row": 1192,
           "date": "2022-04-26"
         },
         {
@@ -15420,7 +15442,7 @@
           "difficulty": "2000.0",
           "tags": "",
           "source": "https://docs.qq.com/sheet/DWGFoRGVZRmxNaXFz?tab=BB08J2",
-          "row": 1191,
+          "row": 1192,
           "date": "2022-04-26"
         }
       ],
@@ -15430,34 +15452,34 @@
   "skipped": [
     {
       "date": "2023-06-16",
-      "row": 890,
+      "row": 891,
       "reason": "原表题目栏无可识别题目链接"
     },
     {
       "date": "2022-04-15",
-      "row": 1198,
+      "row": 1199,
       "reason": "原表题目栏无可识别题目链接"
     },
     {
       "date": "2022-04-13",
-      "row": 1200,
-      "reason": "原表题目栏无可识别题目链接"
-    },
-    {
-      "date": "2022-04-12",
       "row": 1201,
       "reason": "原表题目栏无可识别题目链接"
     },
     {
-      "date": "2022-04-11",
+      "date": "2022-04-12",
       "row": 1202,
       "reason": "原表题目栏无可识别题目链接"
     },
     {
-      "date": "2022-04-08",
+      "date": "2022-04-11",
       "row": 1203,
+      "reason": "原表题目栏无可识别题目链接"
+    },
+    {
+      "date": "2022-04-08",
+      "row": 1204,
       "reason": "原表题目栏无可识别题目链接"
     }
   ],
-  "sourceRows": 1204
+  "sourceRows": 1205
 }
